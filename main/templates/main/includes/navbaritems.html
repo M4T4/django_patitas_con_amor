@@ -1,0 +1,7 @@
+<li><a href="https://discord.gg/tq4Txg">Comunidad</a></li>
+{% if user.is_authenticated %}
+     <li><a href="/account">{{user.username|title}}</a></li>
+     <li><a href="/logout">Salir</a></li>
+{% else %}
+    <li><a href="/login">Acceder</a></li>
+{% endif %}
